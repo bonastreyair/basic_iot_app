@@ -32,6 +32,10 @@ Basic deployable IoT application which includes:
     docker compose up -d
     ```
 
-4. Create _Database_ and _Table_ using Node-RED
+4. Install Node-RED dependencies
 
-5. Connect Grafana to TimescaleDB _Database_
+    - node-red-contrib-re-postgres
+
+5. Create _Database_ and _Table_ using Node-RED
+
+6. Connect Grafana to TimescaleDB _Database_
