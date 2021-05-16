@@ -5,8 +5,8 @@ services:
   timescaledb:
     image: timescale/timescaledb:2.2.1-pg12
     container_name: timescaledb
-    environment:
-      - POSTGRES_PASSWORD=my_password
+    env_file: 
+      - .env
     volumes:
       - timescaledb_data:/var/lib/postgresql/data
     restart: always

@@ -15,20 +15,23 @@ Basic deployable IoT application which includes:
 
 1. Clone the repository
 
-```bash
-git clone https://github.com/bonastreyair/basic_iot_app.git
-```
+    ```bash
+    git clone https://github.com/bonastreyair/basic_iot_app.git
+    ```
 
 2. Set configurations
- - TimescaleDB Database: .env `POSTGRES_PASSWORD`
- - Mosquitto MQTT Broker: mosquitto/config/mosquitto.conf 
- - Grafana Dashboard: grafana/grafana.ini
- - Node-RED Application: node-red/settings.json
+
+    - TimescaleDB Database: **.env** `POSTGRES_USER` and `POSTGRES_PASSWORD`
+    - Mosquitto MQTT Broker: **mosquitto/config/mosquitto.conf**
+    - Grafana Dashboard: **grafana/grafana.ini**
+    - Node-RED Application: **node-red/settings.json**
 
 3. Run the aplication with Docker Compose
 
-```bash
-docker compose up -d
-```
+    ```bash
+    docker compose up -d
+    ```
 
-4. Connect Grafana to TimescaleDB
+4. Create _Database_ and _Table_ using Node-RED
+
+5. Connect Grafana to TimescaleDB _Database_
